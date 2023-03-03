@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCure</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    *{
+      text-align: center;
+    }
+    p{
+      color:rgba(0, 0, 0)
+    }
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  
+    .swiper-slide {
+      max-width: 500px;
+      text-align: center;
+      font-size: 18px;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sector .sector-slider{
+      padding-bottom: 30px;
+    }
+    .sector .sector-slider .box{
+      text-align: center;
+      padding:2rem;
+      margin: 1rem 0;
+      opacity: .4;
+      transform: scale(.9);
+    }
+    /*---- Swiper reviews ----*/
+    :root{
+      --yellow: rgb(6, 6, 153);
+      --light-yellow:#ffee80;
+      --black:#130f40;
+      --light-color:#666;
+      --box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.521);
+      --border:.1rem solid rgba(0,0,0,.1);
+    }
+
+.reviews .review-slider{
+  padding-bottom: 3rem;
+}
+
+.reviews .review-slider .box{
+  text-align: center;
+  padding : 1rem 2rem;
+  margin: 1rem 0;
+  display: block;
+  box-shadow: var(--box-shadow);
+  transform: scale(.9);
+}
+.reviews .review-slider .review-slide-active{
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: var(--box-shadow);
+  border:var(--border);
+  border-radius: .5rem;
+}
+
+ .box img{
+  height:7rem;
+  width:7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+ .content p{
+  color:var(--light-color);
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+ .content h3{
+  color:var(--black);
+  font-size: 1.8rem;
+  padding-bottom: .2rem;
+}
+
+.stars ion-icon{
+  color:var(--yellow);
+  font-size: 1.7rem;
+}
+.swiper-pagination{
+  margin: 10px auto;
+}
+
+  </style>
+  
+</head>
+<body>
+  
+        <nav>
+            <img src="/images/Home/logo.png">
+            <ion-icon name="grid-outline" class="open" onclick="openMenu()"></ion-icon>
+            <ul id="list">
+              <ion-icon name="close-outline" class="close" onclick="closeMenu()"></ion-icon>
+                <li><a href="home.html" class="nav">Home</a></li>
+                <li><a href="doc.html" class="nav">Doctors</a></li>
+                <li><a href="hosp.html" class="nav">Hospitals</a></li>
+                <li><a href="cont.html" class="nav">Contact</a></li>
+                <li><a href="about.html" class="nav">About</a></li>
+                <li><a href="dept.html" class="nav">Department</a></li>
+              </ul>
+              <ul class="list1">
+                <a href="" class="nav1" style="border-radius: 7px;">Login</a>
+              </ul>
+        </nav>
+
+    <div class="container">
+       <div class="text">
+        <h1>" <span>MediCure</span> The Place Where<br> We Provide For Your Health."</h1>
+        <p style="color: aliceblue;">Lorem ipsum dolor sit, amet consectetur adipisicing elitIncidunt dignissimos atque reprehenderit <br>minus impedit ducimus consequuntur, aliquid explicabo rerum mollitia. Doloribus, explicabo <br>sed! Modi suscipit id laborum eaque placeat similique!</p>
+        <br>
+        <div class="ref">
+            <a href="#" class="nav1">Find a Doctor</a>
+            <a href="#" class="nav1">Make an Appointment</a>
+        </div>
+        <button></button>
+       </div>
+    </div>
+    <hr style="margin: 0 50px; background-color: black; color:rgba(0, 0, 0)">
+    <div class="doctor">
+        <br><br>
+        <a href="#" class="tag">Doctor HelpLine</a>
+        <h1 class="head">Dont Worry <span>Help Is<ion-icon name="link-outline"></ion-icon></span><br> Just One Call Away</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Voluptas saepe ducimus amet fuga excepturi, suscipit sapiente et,<br> sed consequuntur veritatis eveniet aperiam asperiores possimus<br> voluptatum autem quam beatae, laudantium culpa!</p>
+        <div class="doctors">
+            <div class="doc">
+                <img src="/images/Doctors/doc1.png" style="max-width: 220px;border-radius: 20px; background-color: rgb(185, 185, 185);">
+                <h2>Walter White</h2>
+                <h3>MBBS, Mphil.,Pharma D,</h3>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <br><br>
+                <a class="call">Call Now</a>
+            </div>
+            <div class="doc">
+                <img src="/images/Doctors/doc2.png" style="max-width: 220px;border-radius: 20px; background-color: rgb(185, 185, 185);">
+                <h2>Emma Thompson</h2>
+                <h3>MBBS, Mphil.,Pharma D</h3>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <br><br>
+                <a class="call">Call Now</a>
+            </div>
+            <div class="doc">
+                <img src="/images/Doctors/doc3.png" style="max-width: 220px;border-radius: 20px; background-color: rgb(185, 185, 185);">
+                <h2>Thomas Shelby</h2>
+                <h3>MBBS, Mphil.,Pharma D</h3>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <br><br>
+                <a class="call">Call Now</a>
+            </div>
+            <div class="doc">
+                <img src="/images/Doctors/doc5.png" style="max-width: 250px; border-radius: 20px; background-color: rgb(185, 185, 185);">
+                <h2>Lhea Rowsey</h2>
+                <h3>MBBS, Mphil.,Pharma D</h3>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <br><br>
+                <a class="call">Call Now</a>
+            </div>
+        </div>
+        <br><br>
+        <a href="doc.html" class="call">View More</a>
+    </div>
+    <hr style="margin: 0 50px; background-color: black; color:rgba(0, 0, 0); height: 1px;">
+    <br><br>
+    <h1 class="head"><span style="color: #2a2281;">Overview</span> Status</h1>
+    <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptas saepe ducimus amet<br> fuga excepturi, suscipit sapiente et, sed consequuntur veritatis eveniet aperiam asperiores<br> possimus voluptatum autem quam beatae, laudantium culpa!</p>
+    <div class="drive">
+        <div class="card">
+            <h2>Childrens Treated</h2>
+            <h1>100,000+</h2>
+            <h3>Tuberclosis</h3>
+        </div>
+        <div class="card">
+            <h2>Patients Treated</h2>
+            <h1>1,000,000+</h2>
+            <h3>U.S.A</h3>
+        </div>
+        <div class="card">
+            <h2>Blood Drives</h2>
+            <h1>150,100</h2>
+            <h3>U.S.A</h3>
+        </div>
+        <div class="card">
+            <h2>Specialised Doctors</h2>
+            <h1>1000+</h2>
+            <h3>U.S.A</h3>
+        </div>
+        <div class="card">
+            <h2>Medical Volunteers</h2>
+            <h1>10000+</h2>
+            <h3>World</h3>
+        </div>
+    </div>
+    <div class="hospital"> 
+        <br><br>
+        <a href="#" class="tag">Hospitals</a>
+        <h1 class="head"><span color="">MonashHealth</span> Provides Service<br>Multiple Medical Centres Around U.S.</h1>
+        <br><br>
+        <p style="text-align: center; color: black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quibusdam nemo voluptatibus ab impedit in quia<br> laudantium, beatae ex corrupti ratione? Eveniet a aperiam doloremque minima. Ipsam facilis rem numquam.</p>
+        <br><br>
+        <div class="hospitals">
+            <div class="location1">
+                <div class="layer">
+                    <h2>New York</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor beatae quia officiis deleniti commodi dolorum quod et. Minima voluptas sint architecto commodi libero unde quas neque accusantium dicta?</p>
+                </div>
+            </div>
+            <div class="location2">
+                <div class="layer">
+                    <h2>Washington</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius obcaecati temporibus labore, odio impedit. Et impedit reprehenderit dignissimos ipsum sunt maiores consectetur eos, voluptas aperiam ea, rem at soluta!</p>
+                </div>
+            </div>
+            <div class="location3">
+                <div class="layer">
+                    <h2>Chicago</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, velit, molestias dolore libero facere distinctio beatae soluta ut doloremque explicabo labore delectus eos tempore iusto omnis dicta saepe tempora. Tenetur.</p>
+                </div>
+            </div>
+            <div class="location4">
+                <div class="layer">
+                    <h2>Delaware</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ipsam pariatur eum voluptate eveniet repellendus ut beatae, natus sit sapiente consequatur minima. Cupiditate perferendis ad sunt animi autem deleniti dignissimos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr style="margin: 0 50px; background-color: black; color:rgba(0, 0, 0, 0.664); height: 1px;">
+    <br>
+    <!-- Swiper -->
+    <section class="sector" id="sector">
+  <div class="sector-slider box">
+    <a href="#" class="tag">Featured</a>
+    <h1 class="head">Featured <span style="color: rgb(30, 30, 141);">Sectors</span></h1>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod aspernatur<br> quibusdam dolore tempora aliquam architecto numquam, neque <br>autem dolores ducimus voluptate illo quis suscipit qui ratione quasi a ullam?</p>
+    <br>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/r-owAMfTMgo" title="Monash Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/QVixhUJYYG4" title="Monash Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/969i7d4g_ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/bVo_JOQkugc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/YubzIGN9S4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/I0Mr-atuHc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/R2mmmCFC1no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/m-BbxS2uyKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/jFByqm_PR9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </section>
+  <br>
+  <div class="mags">
+    <h2 >Proudly Mentioned By</h2>
+    <div class="mag">
+      <img src="/images/Home/logo1.png" style="max-width: 200px;">
+      <img src="/images/Home/logo2.png" style="max-width: 200px;">
+      <img src="/images/Home/logo3.png" style="max-width: 200px;">
+      <img src="/images/Home/logo4.png" style="max-width: 200px;">
+    </div>
+  </div>
+  <marquee behavior="loop" direction="left">
+    <h1>Your Donation Could Help Us Save Millions Of Lives! Please Donate Now...  |    Your Donation Could Help Us Save Millions Of Lives! Please Donate Now...</h1>
+  </marquee>
+  <br>
+  <!-- Review portion -->
+  <section class="reviews" id="reviews">
+    <a href="#" class="tag">Reviews</a>
+    <h1 class="head">Patient <span style="color: rgb(105, 105, 233);;">Reviews</span> </h1>
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-1.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Rick Flag</h3>
+                    <div class="stars">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-2.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Samantha Waller</h3>
+                    <div class="stars">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-3.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Thomas Argent</h3>
+                    <div class="stars">
+                        <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-4.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Allison Grant</h3>
+                    <div class="stars">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-5.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Benjamin Hobbart</h3>
+                    <div class="stars">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background-color: white; color: black;">
+                <img src="images/Reviews/pic-6.png" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                    <h3>Clea Waterfeild</h3>
+                    <div class="stars">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+    <!-- Reviews Portion ended  -->
+  <br><br><br>
+  <div class="info">
+    <a class="tag" style="border-color: #fff; color: #fff;">Community</a>
+    <h1 class="head" style="color: #fff;">Our Blog Community</h1>
+    <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis dolor alias, quo rerum ab<br> quisquam nobis facilis voluptatem deleniti cum expedita? Doloribus architecto aut, rerum dolor iure voluptatem ut.</p>
+    <br><br>
+    <div class="infos">
+      <div class="cards">
+        <img src="/images/Home/card (1).jpg" style="max-width: 250px; border-radius: 20px;">
+        <h3>Our Medical Community</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis dolor alias, quo rerum ab</p>
+        <input type="button" value="Learn More">
+      </div>
+      <div class="cards">
+        <img src="/images/Home/card (5).jpg" style="max-width: 250px; border-radius: 20px;">
+        <h3>Research Sector</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis dolor alias, quo rerum ab</p>
+        <input type="button" value="Learn More">
+      </div>
+      <div class="cards">
+        <img src="/images/Home/card (3).jpg" style="max-width: 250px; border-radius: 20px;">
+        <h3>Pharmaciutical Dept.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis dolor alias, quo rerum ab</p>
+        <input type="button" value="Learn More">
+      </div>
+      <div class="cards">
+        <img src="/images/Home/card (4).jpg" style="max-width: 250px; border-radius: 20px;">
+        <h3>Operational Therapy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis dolor alias, quo rerum ab</p>
+        <input type="button" value="Learn More">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="foothead">
+      <div class="card">
+        <h2><span style="font-weight: 300;">Monash</span>Health <span style="font-weight: 300;">Association</span></h2>
+        <h2><span style="font-weight: 300;">Monash</span>Education <span style="font-weight: 300;">Commission</span></h2>
+        <p>Follow us</p>
+        <div class="icons">
+        <ion-icon name="logo-facebook" style="color: black; font-size: 2em; color: rgb(44, 58, 57); padding: 0 10px;"></ion-icon>
+        <ion-icon name="logo-instagram" style="color: black; font-size: 2em; color: rgb(44, 58, 57); padding: 0 10px;"></ion-icon>
+        <ion-icon name="logo-youtube" style="color: black; font-size: 2em; color: rgb(44, 58, 57); padding: 0 10px;"></ion-icon>
+        <ion-icon name="logo-google" style="color: black; font-size: 2em; color: rgb(44, 58, 57); padding: 0 10px;"></ion-icon>
+        </div>
+      </div>
+        <div class="card">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sponsers</a></li>
+            <li><a href="#">Education</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Donation</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Referals</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+      <div class="card">
+        <h3>Blog Post</h3>
+        <form method="get">
+          <input type="text" placeholder="Your Name"><br>
+          <input type="email" placeholder="Your Email"><br>
+          <textarea name="tarea" id="tarea" cols="30" rows="10" placeholder="Your Suggestions"></textarea>
+        </form>
+      </div>
+    </div>
+    <div class="footbody">
+       <div class="card">
+        <p>We're proudly backed by</p>
+        <img src="/images/Home/partner (1).png" style="max-width: 100px;">
+        <img src="/images/Home/partner (2).png" style="max-width: 100px;">
+        <img src="/images/Home/partner (3).png" style="max-width: 100px;">
+       </div>
+       <div class="card">
+        <img src="/images/Home/logo.png" style="max-width: 200px;">
+        </div>
+       <div class="card">
+        <h4>Monash Health Corporation Limited</h4>
+        <h4>Copyright Issues | All Rights Reserved.</h4>
+       </div>
+    </div>
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".sector-slider", {
+      grabCursor: true,
+      centeredSlides: true,  
+      spaceBetween: 20,
+      loop:true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".sector-pagination",
+        clickable:true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+  <script>
+    var Menu = document.getElementById("list");
+ function openMenu(){
+    Menu.style.left = "0"
+ }
+ function closeMenu(){
+    Menu.style.left = "-100%"
+ }
+</script>
+<script>
+  var swiper = new Swiper(".review-slider", {
+    grabCursor: true,
+    centeredSlides: true,  
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+<script>
+    let menu = document.querySelector('#menu-btn');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.onclick = () =>{
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('active');
+    }
+    
+    document.querySelector('#login-btn').onclick = () =>{
+      document.querySelector('.login-form-container').classList.toggle('active');
+    }
+    
+    document.querySelector('#close-login-form').onclick = () =>{
+      document.querySelector('.login-form-container').classList.remove('active');
+    }
+    
+    window.onscroll = () =>{
+    
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('active');
+    
+      if(window.scrollY > 0){
+        document.querySelector('.header').classList.add('active');
+      }else{
+        document.querySelector('.header').classList.remove('active');
+      };
+    
+    };
+    
+    document.querySelector('.home').onmousemove = (e) =>{
+    
+      document.querySelectorAll('.home-parallax').forEach(elm =>{
+    
+        let speed = elm.getAttribute('data-speed');
+    
+        let x = (window.innerWidth - e.pageX * speed) / 90;
+        let y = (window.innerHeight - e.pageY * speed) / 90;
+    
+        elm.style.transform = `translateX(${y}px) translateY(${x}px)`;
+    
+      });
+    
+    };
+    
+    
+    document.querySelector('.home').onmouseleave = (e) =>{
+    
+      document.querySelectorAll('.home-parallax').forEach(elm =>{
+    
+        elm.style.transform = `translateX(0px) translateY(0px)`;
+    
+      });
+    
+    };
+</script>
+</body>
+</html>
